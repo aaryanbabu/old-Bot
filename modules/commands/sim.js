@@ -19,7 +19,7 @@ async function simsimi(a, b, c) {
         { APIKEY } = global.configModule.sim,
         g = (a) => encodeURIComponent(a);
     try {
-        var { data: j } = await axios({ url: `https://allapi.priyanshu91.repl.co/sim?type=ask&ask=${g(a)}&apikey=PriyanshVip`, method: "GET" });
+        var { data: j } = await axios({ url: `https://25zvgf-5000.csb.app/sim?type=ask&ask=${g(a)}&apikey=PriyanshVip`, method: "GET" });
         return { error: !1, data: j }
     } catch (p) {
         return { error: !0, data: {} }
