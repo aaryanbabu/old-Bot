@@ -17,7 +17,7 @@ module.exports.run = async function({ api, event, args }) {
     const content = encodeURIComponent(args.join(" "));
     if (!args[0]) return api.sendMessage("Please type a message...", tid, mid);
     try {
-        const res = await axios.get(`https://ai.new911.repl.co/api/tools/blackai?question=${content}`);
+        const res = await axios.get(`https://hdr94k-3000.csb.app/api/tools/blackai?question=${content}`);
         const respond = res.data.message;
         if (res.data.error) {
             api.sendMessage(`Error: ${res.data.error}`, tid, (error, info) => {
