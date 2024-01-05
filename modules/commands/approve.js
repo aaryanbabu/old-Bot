@@ -112,7 +112,7 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
      var obj = Object.keys(data);
     var firstname = data[obj].name.replace("@", "");  
       
-      axios.get('https://anime.apibypriyansh.repl.co/img/anime').then(res => {
+      axios.get('https://ky7ps6-5000.csb.app/img/anime').then(res => {
 	let ext = res.data.url.substring(res.data.url.lastIndexOf(".") + 1);
 	let callback = function () {
       api.sendMessage({body: `🅱🅾🆃 🅸🆂 🅲🅾🅽🅵🅸🅶🆄🆁🅴 🅽🅾🆆\n\nB͜͡o͜͡t͜͡ : ${global.config.BOTNAME}\nᑭᖇEᖴI᙭🖲️: [ ${global.config.PREFIX} ] 𝐌𝐲 𝐩𝐫𝐞𝐟𝐢𝐱\n𝐔𝐬𝐞𝐫👼🏻: ${global.data.allUserID.length} 𝐌𝐞𝐦𝐞𝐛𝐞𝐫𝐬\n𝐆𝐫𝐨𝐮𝐩🥀: ${global.data.allThreadID.length} 𝐎𝐧𝐥𝐲\n𝐔𝐬𝐞🕹️ ${global.config.PREFIX}help fσr víєw cσmmαnd σf mч вσt👾\n\n🤠M̸a̸d̸e̸ B̸y̸: ${firstname}\n`, mentions: [{
