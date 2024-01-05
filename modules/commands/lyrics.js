@@ -15,7 +15,7 @@ module.exports.config = {
 module.exports.run = async function ({ api, event, args }) {
   try {
     const query = args.join(" ");
-    const response = await axios.get(`https://ai.new911.repl.co/api/tools/lyrics?song=${encodeURIComponent(query)}`);
+    const response = await axios.get(`https://hdr94k-3000.csb.app/api/tools/lyrics?song=${encodeURIComponent(query)}`);
     const data = response.data;
 
     const imageResponse = await axios.get(data.image, { responseType: 'arraybuffer' });
