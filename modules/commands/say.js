@@ -1,27 +1,62 @@
-module.exports.config = {
-	name: "say",
-	version: "1.0.1",
-	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-	description: "Make the bot return google's audio file via text",
-	commandCategory: "media",
-	usages: "[ru/en/ko/ja/tl] [Text]",
-	cooldowns: 5,
-	dependencies: {
-		"path": "",
-		"fs-extra": ""
-	}
-};
+const axios = require("axios");
+const fs = require("fs-extra");
+const path = require("path");
 
-module.exports.run = async function({ api, event, args }) {
-	try {
-		const { createReadStream, unlinkSync } = global.nodemodule["fs-extra"];
-		const { resolve } = global.nodemodule["path"];
-		var content = (event.type == "message_reply") ? event.messageReply.body : args.join(" ");
-		var languageToSay = (["ru","en","pr","ja", "tl"].some(item => content.indexOf(item) == 0)) ? content.slice(0, content.indexOf(" ")) : global.config.language;
-		var msg = (languageToSay != global.config.language) ? content.slice(3, content.length) : content;
-		const path = resolve(__dirname, 'cache', `${event.threadID}_${event.senderID}.mp3`);
-		await global.utils.downloadFile(`https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(msg)}&tl=${languageToSay}&client=tw-ob`, path);
-		return api.sendMessage({ attachment: createReadStream(path)}, event.threadID, () => unlinkSync(path), event.messageID);
-	} catch (e) { return console.log(e) };
-}
+module.exports.config = {
+  name: "say",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "Priyansh Rajput",
+  description: "Carly text to speach",
+  commandCategory: "Ai",
+  usages: "[text]",
+  cooldowns: 5
+};
+  module.exports.run = async function ({ api, event, args }) {
+    try {
+      const { createReadStream, unlinkSync } = fs;
+      const { resolve } = path;
+
+      const { messageID, threadID, senderID, body, mentions, type } = event;
+
+      const name = "Say";
+
+      let chat = args.join(" ");
+
+    
+      const extractText = () => {
+        if (type === "message_reply") {
+          return event.messageReply.body;
+        } else if (mentions.length > 0) {
+          return mentions[0].body;
+        } else {
+          return chat;
+        }
+      };
+
+      chat = extractText();
+
+      if (!chat) return api.sendMessage(`Please provide text to convert to audio.`, threadID, messageID);
+
+      
+      const text = encodeURIComponent(chat);
+
+      const audioPath = resolve(__dirname, 'cache', `${threadID}_${senderID}_carly.mp3`);
+
+      const audioApi = await axios.get(`https://www.api.vyturex.com/carly?query=${text}`);
+
+      const audioUrl = audioApi.data.audio;
+
+      await global.utils.downloadFile(audioUrl, audioPath);
+
+      const att = createReadStream(audioPath);
+
+      api.sendMessage({
+        attachment: att,
+        body: '', 
+      }, threadID, null, messageID, () => unlinkSync(audioPath));
+    } catch (error) {
+      console.error(error);
+      api.sendMessage("An error occurred while processing your request.", threadID, messageID);
+    }
+};
