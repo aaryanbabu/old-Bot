@@ -21,7 +21,7 @@ module.exports.run = async function ({ api, event, args }) {
     const imageResponse = await axios.get(data.image, { responseType: 'arraybuffer' });
     fs.writeFileSync(__dirname + '/cache/lyrics.png', Buffer.from(imageResponse.data));
 
-    const formattedResponse = `❏ Credit: Priyansh\n\n❏ Title: ${data.title}\n❏ Artist: ${data.artist}\n\n❏ Lyrics:\n${data.lyrics}\n\n❏ Contact: https://priyansh.infopriyansh.repl.co/`;
+    const formattedResponse = `❏ Credit: Priyansh\n\n❏ Title: ${data.title}\n❏ Artist: ${data.artist}\n\n❏ Lyrics:\n${data.lyrics}\n\n❏ Contact: https://info-priyansh.netlify.app/`;
 
     return api.sendMessage({
       body: formattedResponse,
