@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 
 module.exports.config = {
   name: "lyrics",
-  version: "2.0.0",
+  version: "4.0.0",
   hasPermssion: 0,
   credits: "Priyansh Rajput",
   description: "Fetch lyrics of a song",
