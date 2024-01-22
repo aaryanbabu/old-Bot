@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 
 module.exports.config = {
   name: "lyrics",
-  version: "3.0.0",
+  version: "2.0.0",
   hasPermssion: 0,
   credits: "Priyansh Rajput",
   description: "Fetch lyrics of a song",
@@ -21,7 +21,7 @@ module.exports.run = async function ({ api, event, args }) {
     const imageResponse = await axios.get(data.image, { responseType: 'arraybuffer' });
     fs.writeFileSync(__dirname + '/cache/lyrics.png', Buffer.from(imageResponse.data));
 
-    const formattedResponse = `❏ Credit: Priyansh\n\n❏ Title: ${data.title}\n❏ Artist: ${data.artist}\n\n❏ Lyrics:\n${data.lyrics}\n\n❏ Contact: https://info-priyansh.netlify.app/`;
+    const formattedResponse = `❏ Credit: Priyansh\n\n❏ Title: ${data.title}\n❏ Artist: ${data.artist}\n\n❏ Lyrics:\n${data.lyrics}\n\n❏ Contact: https://info-priyanshu.netlify.app/`;
 
     return api.sendMessage({
       body: formattedResponse,
