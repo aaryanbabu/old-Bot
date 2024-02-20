@@ -21,8 +21,9 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL })
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("@सलोनी ठकुराईन ")==0 || event.body.indexOf("saloni")==0 || event.body.indexOf("Thakurain")==0 || event.body.indexOf("Saloni")==0) {
 		var msg = {
-				body: "Ye to single hai 🤭"
-			}
+				body: "Broken girl 💔",
+				attachment: fs.createReadStream(__dirname + `/noprefix/saloni.jpeg`)
+		}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💔", event.messageID, (err) => {}, true)
 		}
