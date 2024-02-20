@@ -1,6 +1,6 @@
 {
     "name": "Priyansh",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A simple Facebook Messenger Bot Modified by Priyansh Rajput",
     "main": "Priyansh.js",
     "scripts": {
