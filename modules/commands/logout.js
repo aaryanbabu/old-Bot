@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "logout",
     version: "1.0.1",
-    hasPermssion: 1,
+    hasPermssion: 2,
     credits: "Priyansh",
     description: "Logout ACC Bot",
     commandCategory: "System",
