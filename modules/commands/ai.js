@@ -45,7 +45,7 @@ module.exports.run = async function ({ api, event }) {
 
   try {
     const res = await axios.get(
-      `https://hdr94k-3000.csb.app/api/tools/blackai?question=${encodeURIComponent(question)}`
+      `https://ai-neu6.onrender.com/api/tools/blackai?question=${encodeURIComponent(question)}`
     );
 
     const respond = res.data.message;
