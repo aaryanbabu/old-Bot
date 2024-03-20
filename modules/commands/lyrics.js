@@ -15,7 +15,7 @@ module.exports.config = {
 module.exports.run = async function ({ api, event, args }) {
   try {
     const query = args.join(" ");
-    const response = await axios.get(`https://ai-neu6.onrender.com/api/tools/lyrics?song=${encodeURIComponent(query)}`);
+    const response = await axios.get(`https://ai-opck.onrender.com/api/tools/lyrics?song=${encodeURIComponent(query)}`);
     const data = response.data;
 
     const imageResponse = await axios.get(data.image, { responseType: 'arraybuffer' });
