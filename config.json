@@ -23,7 +23,7 @@
     "PASSWORD": "",
     "OTPKEY": "",
     "BOTNAME": "BASANTI",
-    "PREFIX": "/",
+    "PREFIX": ".",
     "ADMINBOT": [
         "100004469851919"
     ],
