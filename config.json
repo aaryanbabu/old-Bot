@@ -14,7 +14,7 @@
         "rainbow.js",
         "song.js",
         "prince.js",
-        "rankup.js"
+        ""
     ],
     "eventDisabled": [
         "join.js"
