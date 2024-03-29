@@ -3,7 +3,7 @@ module.exports.config = {
 	version: "1.0.2",
 	hasPermssion: 2,
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-	description: "approve the group by admin",
+	description: "approve the gc using bots xD",
 	commandCategory: "Admin",
     cooldowns: 5
 };
@@ -30,7 +30,7 @@ module.exports.handleReply = async function ({ event, api, Currencies, handleRep
                 case `A`: {
    			data.push(idBox);
    			fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-   			api.sendMessage(`» 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐁𝐨𝐱: ${idBox}\n𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 𝐁𝐲 𝐘𝐨𝐮🙌🤓`, threadID, () => {
+   			api.sendMessage(`» Successfully approved the box:\n${idBox}`, threadID, () => {
           dataP.splice(dataP.indexOf(idBox), 1);
     		fs.writeFileSync(dataPending, JSON.stringify(dataP, null, 2));
     	}, messageID)
@@ -92,30 +92,32 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
     	idBox = (args[1]) ? args[1] : event.threadID;
       if (isNaN(parseInt(idBox))) return api.sendMessage("[ ERR ] Not a number", threadID, messageID);
     	if (!data.includes(idBox)) return api.sendMessage("[ ERR ] Box is not pre-approved!", threadID, messageID);
-      api.sendMessage(`𝐘𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐦𝐨𝐯𝐞𝐝 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐛𝐫𝐨𝐰𝐬𝐢𝐧𝐠 𝐥𝐢𝐬𝐭 𝐛𝐲 𝐭𝐡𝐞 𝐚𝐝𝐦𝐢𝐧 𝐟𝐨𝐫 𝐭𝐡𝐞 𝐫𝐞𝐚𝐬𝐨𝐧: ${lydo}`, idBox);
-    	api.sendMessage(`𝐁𝐨𝐱 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐦𝐨𝐯𝐞𝐝 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐚𝐥𝐥𝐨𝐰𝐞𝐝 𝐛𝐨𝐭𝐬`, threadID, () => {
+      api.sendMessage(`[ OK ] Your group has been removed from the browsing list by the admin for the reason: ${lydo}`, idBox);
+    	api.sendMessage(`[ OK ] Box has been removed from the list of allowed bots`, threadID, () => {
     		data.splice(data.indexOf(idBox), 1);
     		fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
     	}, messageID)
     }
-    else if (isNaN(parseInt(idBox))) api.sendMessage("[ ERR ] 𝐓𝐡𝐞 𝐈𝐃 𝐲𝐨𝐮 𝐞𝐧𝐭𝐞𝐫𝐞𝐝 𝐢𝐬 𝐧𝐨𝐭 𝐯𝐚𝐥𝐢𝐝", threadID, messageID);
-    else if (data.includes(idBox)) api.sendMessage(`[ - ] ID ${idBox} 𝐩𝐫𝐞-𝐚𝐩𝐩𝐫𝐨𝐯𝐞𝐝!`, threadID, messageID);
-   	else api.sendMessage("✨ApKa Group Approved Kar Diya Hai🙌.\n 🖤So Enjoy\n\n 💝🥀𝐎𝐖𝐍𝐄𝐑:- 𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙☜ 💫\n🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:-  www.facebook.com/priyanshu.rajput.official\n\n👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇", idBox, (error, info) => {
+    else if (isNaN(parseInt(idBox))) api.sendMessage("[ ERR ] The ID you entered is not valid", threadID, messageID);
+    else if (data.includes(idBox)) api.sendMessage(`[ - ] ID ${idBox} pre-approved!`, threadID, messageID);
+   	else api.sendMessage("[ OK ] ✨ApKa Group Approved Kar Diya Hai🙌.\n 🖤So Enjoy\n\n ༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐌⃞ʀ ‣⃟ ⃝𑁍 ⃝𝐀ɑ͜͡ɽ̬̬̬̬̬̬̬̬̬̬̬̬̬ɣ̽̈ɑ͜͡ƞ̈͢ﮩـﮩـ圓‣⃟𑁍🩷🪽☜ ༺ ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠𒁍⃝𓆩٭Ɱr. 𝐀𝐀ɼƔ𝐀η🥀💌٭𓆪᭄〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/Mr.Aaryan.babu ☜ ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱 :- Contact On instagram  Username 👉  aaryan_maurya_99", idBox, (error, info) => {
    		api.changeNickname(` 〖 ${global.config.PREFIX} 〗 ➺ ${(!global.config.BOTNAME) ? "" : global.config.BOTNAME}`, idBox, global.data.botID);
       const axios = require('axios');
 	const request = require('request');
 	const fs = require("fs");
-   let admID = "100037743553265";    
+   let admID = "100004469851919";    
   
       api.getUserInfo(parseInt(admID), (err, data) => {
       if(err){ return console.log(err)}
      var obj = Object.keys(data);
     var firstname = data[obj].name.replace("@", "");  
       
-      axios.get('https://ky7ps6-5000.csb.app/img/anime').then(res => {
+      axios.get('https://anime.apibypriyansh.repl.co/img/anime').then(res => {
 	let ext = res.data.url.substring(res.data.url.lastIndexOf(".") + 1);
 	let callback = function () {
-      api.sendMessage({body: `🅱🅾🆃 🅸🆂 🅲🅾🅽🅵🅸🅶🆄🆁🅴 🅽🅾🆆\n\nB͜͡o͜͡t͜͡ : ${global.config.BOTNAME}\nᑭᖇEᖴI᙭🖲️: [ ${global.config.PREFIX} ] 𝐌𝐲 𝐩𝐫𝐞𝐟𝐢𝐱\n𝐔𝐬𝐞𝐫👼🏻: ${global.data.allUserID.length} 𝐌𝐞𝐦𝐞𝐛𝐞𝐫𝐬\n𝐆𝐫𝐨𝐮𝐩🥀: ${global.data.allThreadID.length} 𝐎𝐧𝐥𝐲\n𝐔𝐬𝐞🕹️ ${global.config.PREFIX}help fσr víєw cσmmαnd σf mч вσt👾\n\n🤠M̸a̸d̸e̸ B̸y̸: ${firstname}\n`, mentions: [{
+      api.sendMessage({body: `❒❒ BOT ARE NOW CONNECTED ❒❒\n=====================\n┏━━━━ 🖤 ━━━━┓
+  ✦❥⋆⃝𝐌𝐑..𝐀𝐀𝐑𝐘𝐀𝐍 ✦ 
+┗━━━    🖤 ━━━━┛\n=====================\n➪ BOT: ${global.config.BOTNAME}\n➪ Prefix: ${global.config.PREFIX}\n➪ Users: ${global.data.allUserID.length}\n➪ Groups: ${global.data.allThreadID.length}\n=====================\n[]---------------------------------------[]\nUse '${global.config.PREFIX}Help' T0o View The Commands That Available!(ღ˘⌣˘ღ)\n[]---------------------------------------[]\n⌨ Made by: ${firstname}\n`, mentions: [{
                            tag: firstname,
                            id: admID,
                            fromIndex: 0,
@@ -126,14 +128,14 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
 				request(res.data.url).pipe(fs.createWriteStream(__dirname + `/cache/duyet.${ext}`)).on("close", callback);
 			}) 
       })
-   		if (error) return api.sendMessage("𝐒𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 𝐰𝐞𝐧𝐭 𝐰𝐫𝐨𝐧𝐠, 𝐦𝐚𝐤𝐞 𝐬𝐮𝐫𝐞 𝐭𝐡𝐞 𝐢𝐝 𝐲𝐨𝐮 𝐞𝐧𝐭𝐞𝐫𝐞𝐝 𝐢𝐬 𝐯𝐚𝐥𝐢𝐝 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐢𝐬 𝐢𝐧 𝐭𝐡𝐞 𝐛𝐨𝐱![𝐄𝐫𝐫𝐨𝐫]", threadID, messageID);
+   		if (error) return api.sendMessage("[ ERR ] Something went wrong, make sure the id you entered is valid and the bot is in the box!", threadID, messageID);
    		else {
    			data.push(idBox);
    			fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-   			api.sendMessage(`𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐁𝐨𝐱: ${idBox}\n𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 𝐁𝐲 𝐘𝐨𝐮🙌🤓`, threadID, () => {
+   			api.sendMessage(`[ OK ] Successfully Approved The Box (◕‿◕):\n${idBox}`, threadID, () => {
           dataP.splice(dataP.indexOf(idBox), 1);
     		fs.writeFileSync(dataPending, JSON.stringify(dataP, null, 2));
     	}, messageID)
         }
    	});
-          }
+  }
