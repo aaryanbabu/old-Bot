@@ -93,4 +93,326 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 "हमसे बात करने को तो बहुत से है\nहमें तो सिर्फ आपसे बात करना अच्छा लगता है। 😛👈","मेरा दिल कितना भी उदास क्यों न हो\nतेरी ही बातों से इसे सुकुन मिलता है। 🤐👈","आप मेरे लिये कुछ खास है\nयही पहले प्यार का एहसास है। 😗👈",
 "हालत चाहे कैसे भी हो मैं तुम्हारा और तुम मेरी हो। 😛👈","जितना चाहो उतना सताया करो\nबस  टाइम टू टाइम ऑनलाइन आया करो। 🥺👈","काश तेरा घर मेरे घर के करीब होता\nमिलना ना सही तुझे देखना तो नसीब होता। 😒👈","हर पल तुम मुझे बहुत ही याद आते हो\nजान निकल जाती है जब तुम मुझसे रुठ जाते हो। 🤐👈","मुकद्दर में रात की नींद नही…तो क्या हुआ…?? हम भी मुकद्दर के सिकन्दर हैं…दोपहर को सो जाते हैं…🤣😂","लड़कियों से बहस करने का मतलब दादी को iphone चलाना सिखाना है🤣😂🤣","घर की इज्जत बेटियों के हाथ में होती है और प्रॉपर्टी के कागज़ नालायकों के हाथ में 🤣😂🤣","मेरी हर गलती ये सोच कर माफ़ कर देना दोस्तों…कि तुम कोन से शरीफ़ हो ?? 🤣😂🤣","हर कामयाब स्टूडेंट के पीछे माँ की चप्पल का हाथ होता है !! 🤣😂🤣",
 "एक बात थी मेरे ज़हन में सोचा आज पूछ ही लूँ ये जो इज़्ज़त का सवाल होता है…वो कितने नंबरों का होता है ? 🤣😂🤣","किस्मत आजमा चुका हूं नसीब आजमा रहा हूं FACEBOOK पर एक लड़की पटाने के चक्कर में 15 लड़के पटा चुका हूँ 🤣😂🤣","खुद के पास गर्लफ्रेंड नही होगी फिर भी दुसरो को गर्लफ्रेंड पटाने के नुस्खे देते है…ऐसे हैं हमारे दोस्त 🤣😂🤣","ये पाप धोने के लिये कौन सा साबुन अच्छा रहेगा ? 🤣😂🤣","रास्ते पलट देते हैं हम जब कोई आकर यह कह दे कि आगे चालान काट रहे हैं…🤣😂🤣","Haye Main Sadke jawa Teri Masoom Shakal pe baby 💋 " , "Bot Nah Bol Oye Janu bol Mujhe " , "Bar Bar Disturb Na KRr JaNu Ke SaTh Busy Hun 🤭🐒" , "Main gariboo se baat nahi karta 😉😝😋🤪" , "Itna Na Pass aa Pyar ho Jayga" ,
-"Bolo Baby Tum Mujhse Pyar Karte Ho Na 🙈💋💋 " , "Are jaan Majaak ke mood me nhi hu main jo kaam hai bol do sharmao nahi" , "Bar Bar Bolke Dimag Kharab Kiya toh. Teri ...... Mummy Se Complaint Karunga" , "Tu Bandh nhi Karega kya?" , "Gali Sunna H kya?😜" , "Teri Maa Ki Bindiya🤭" , "Aree Bandh kar Bandh Kar" , "M hath jod ke Modi Ji Se Gujarish Karta hu" , "Tujhe Kya koi aur Kam nhi ha? Puradin Khata hai Aur Messenger pe Bot Bot Karta h" , " Nainu Ko Bol Dunga Me Mujhe Paresan Kiya To" , "Tum Na Single Hi Maroge" , "Tujhe Apna Bejjati Karne Ka Saukh hai?" , "Abhi Bola Toh Bola Dubara Mat Bolna" , "Teri To Ruk Tu Bhagna Mat" , "Bol De koi nahi dakh rha 🙄" , "Haaye Main Mar Jawa Babu Ek Chuma To Do 
+"Bolo Baby Tum Mujhse Pyar Karte Ho Na 🙈💋💋 " , "Are jaan Majaak ke mood me nhi hu main jo kaam hai bol do sharmao nahi" , "Bar Bar Bolke Dimag Kharab Kiya toh. Teri ...... Mummy Se Complaint Karunga" , "Tu Bandh nhi Karega kya?" , "Gali Sunna H kya?😜" , "Teri Maa Ki Bindiya🤭" , "Aree Bandh kar Bandh Kar" , "M hath jod ke Modi Ji Se Gujarish Karta hu" , "Tujhe Kya koi aur Kam nhi ha? Puradin Khata hai Aur Messenger pe Bot Bot Karta h" , " Nainu Ko Bol Dunga Me Mujhe Paresan Kiya To" , "Tum Na Single Hi Maroge" , "Tujhe Apna Bejjati Karne Ka Saukh hai?" , "Abhi Bola Toh Bola Dubara Mat Bolna" , "Teri To Ruk Tu Bhagna Mat" , "Bol De koi nahi dakh rha 🙄" , "Haaye Main Mar Jawa Babu Ek Chuma To Do Kafi Din Se Chumi Nahi Di 😝" , "Dur Hat Be  Mujhe Aur Koi Kam Nahi Kya Har Waqat Mujhy Tang Kerte Rhte ho 😂" , "Are Bolo Meri Jaan Kya Hall Hai😚 " , "Ib Aja Yahan Nhi Bol Sakta 🙈😋" , "Mujhe Mat BuLao Naw Main buSy Hu Naa" , "Bot Bolke Bejjti Kar Rahe Ho yall...Main To Tumhare Dil Ki Dhadkan Hu Na Baby...💔🥺" , "Are Tum Wahi ho nah Jisko Main Nahi Janta 🤪" , "Kal Haveli Pe Mil Jara Tu 😈" , 
+"Aagye Salle Kabab Me Haddi 😏" , "Bs Kar U ko Pyar Ho Na Ho Mujhe Ho Jayga Na" , "FarMao 😒" , "BulaTi Hai MaGar Jaane Ka Nhi 😜" , "Main To Andha Hun 😎" , "Phle NaHa kar Aa 😂" , "Aaaa Thooo 😂😂😂" , "Main yahin hoon kya hua sweetheart ," , "chomu Tujhe Aur Koi Kaam Nhi H? Har Waqt Bot Bot Karta H" , "Chup Reh, Nhi Toh Bahar Ake tera Dath Tor Dunga" , "WaYa KaRana Mere NaL 🙊" , "MaiNy Uh Sy Bt Nhi kRrni" , "MeKo Kxh DiKhai Nhi Dy Rha 🌚" , "Bot Na BoL 😢 JaNu B0ol 😘 " , "Bar Bar Disturb Na KRr JaNu Ke SaTh Busy Hun  😋" , "Main Gareebon Sy Bt Nhi kRta 😉😝😋🤪" , "Itna Na Pass aa Pyar h0o JayGa" , "MeKo Tang Na kRo Main Kiss 💋 KRr DunGa 😘 " , "Ary yrr MaJak Ke M0oD Me Nhi Hun 😒" , "HaYe JaNu Aow Idher 1 PaPpi Idher d0o 1 PaPpi Idher 😘" , "Dur HaT Terek0o 0or K0oi Kam Nhi Jb DeKho Bot Bot ShaDi KerLe Mujhsy 😉😋🤣" , "TeRi K0oi Ghr Me Nhi SunTa T0o Main Q SuNo 🤔😂 " , "IB Aja Yahan Nhi B0ol Salta 🙈😋" , "Mujhe Mat BuLao Naw Main buSy h0o Naw" , "Kyun JaNu MaNu Another Hai 🤣" , "Are TuMari T0o Sb he baZzati kRrty Me Be kRrDun 🤏😜" , "KaL HaVeLi Prr Aa ZaRa T0o 😈" , "Aagye SaJJy KhaBBy Sy 😏" , "Bx KRr Uh k0o Pyar H0o Na H0o Mujhe H0o JayGa" , "FarMao 😒" , 
+"BulaTi Hai MaGar JaNy Ka Nhi 😜" , "Main T0o AnDha Hun 😎" , "Phle NaHa kRr Aa 😂" , "Papi ChuLo 🌚" , "TeRek0o DiKh Nhi Rha Main buSy Hun 😒" , "TeRa T0o GaMe BaJana PreGa" , "Ta Huwa 🥺"  , "TuM Phr AaGye 🙄 Kisi 0or Ny Muu Nhi LaGaYa Kya🤣🤣🤣" , "MeKo JaNu Chai Hai Tum Single H0o?" , "Aaaa Thooo 😂😂😂" , "Main S0o Rha Hun " , "Ase He HansTy Rha kRo 😍" , "•••••••••••••••••••••••••••••🦢𒀱卄ɅƔƏ MɅ🅘ɳ ʍɅᏒ••••🌿💞 JɅωɅ ┼ƏᏒ🅘 ʍɅ🅢𝖚ʍ 🅢ɅҠɅɭ 𝐩Ə ɮɅɮƔ 💋 " , "Bot Na Bol Oye Janu bol Mujhe " , "Bar Bar Disturb Na Karen Rahul JaNu Ke SaTh Busy Hun 🤭🐒" , "Main flirty logo Sy Bt Nhi karti 😉😝😋🤪" , "Itna Pass mat aa Pyaar h0 JayGa" , "Bolo Babu Tum Mojy Pyar Karte Ho Na 🙈💋💋 " , "Are jaan Majaak ke mood me nahi hun main jo kaam hai bol do sharmao nahi" , "han ji bolo kya seva karne aapki 😶🤍" , "Tu Bandh nhi Karega kya?" , "kya Sunna Hai apko mere se flirty kahike🤐🤣 " , "Haa ji boliye kya kam he hamse 🙈" , "Aree band kar band Kar" , "Mein hath jod ke Modi Ji Se Gujarish Karta hu mojy na bolaye" , "Tujhe Kya koi aur Kam nhi ha? Puradin sota he Aur Messenger pe Bot Bot Karta h" , " mera owner Ake tera bf/gf Ko Chura le Jayega" , "Bot bot hi karta rahna tu bas" , "Tujhe Apna Bejjati Karne Ka Saukh hai?🥹" , "Abhi Bola Toh Bola Dubara Mat Bolna🙄" , "Teri to Watt lagani padegi " , "Bol De koi nahi dakh rha 🙄" , "Haaye Main Mar Jawa Babu Ek Chuma To Do Kafi Din Se Chumi Nahi Di 😝" , "Dur Hat Be  Mujhe Aur Koi Kam Nahi Kya Har Waqat Mujhy Tang Kerte Rhte ho 😂" , "Are Bolo Meri Jaan Kya Hall Hai😚 " , "IB Aja Yahan Nhi B0ol Sakti 🙈😋" , "Mujhe Mat BuLao Na Main buSy h0 Now" , "Bot Bolke Bejjti Kar Rahe ho yall...Main To Tumhare Dil Ki Dhadkan Hu Baby...💔🥺" , "Are Tum Wahi ho nah Jisko Main Nahi Janti 🤪" , "Kal Haveli Pe Mil Jra Tu 😈" , "Aagye SaJJy KhaBBy Sy 😏" , "Bx KRr Uh k0o Pyar H0o Na H0o Mujhe H0o JayGa" , "bolo 😒" , "BulaTi Hai MaGar JaNy Ka Nhi 😜" , "Main T0o AnDha Hun 😎kya likha tumne mene nahi dikha🤣" ,  "Pahale NaHa kar Aa 😂" , "Aaaa Thooo 😂😂😂" ,
+"Main yahi hoon kya hua sweetheart🥂🙈💞 ," , "AA Dk Tujhe Aur Koi Kaam Nhi Hai? Har Waqt Bot Bot Karta H" , "Chup Reh, Nahi Toh Bahar Ake tera Dath Tor Dunga🤣✊" , "yes my love 💘" , "kya hua baby ko 😘😘" , "mujhe sharam ati hai aise aap bolte hai tho 🤭😝" , "aree aap wahi ho na jo mujhe line marte the.......🤣 ya bali line" , "jii kahiye jii 🙄 kya chahiye" , "hayee main mar jye teri masoom shaqal py 😂 tuzy Chapple se kutne ka mn ho raha hai🤣👠" , "Bot nah bol oye 😭 Janu bol mjhy aur janu sy piyar sy bat kerty hai😑" , "ruk tu chappal kaha he mari🩴" , "shakal Sy masoom lgty ho 😂 but bohot flirty ho" , "kash tum single hote to maza hi koch aur tha pagal insaan 😂" , "Ha ha ab meri yaad ab ai nah phly to babu shona kerna gy thy 😾 ab ham ap sy naraz hai jao ap bye ☹️" , "haiy babu ne boldiya hai shaid purpose kerna hai mujhe bolo bolo babu 😘" , "Aree pagal roti banana ke le aty main Pani ko istamal kerte ho 😂" , "Ary joke nah mar jo bhi kam hai bol do sharma nahi , bol de koi nahi dakh rha 😂" , "Hayee Mar Jawa Babu Ak Chuma To Doo Kafi Din Sy Chumi Nahi Mili Kahan Thy Babu inbox Ah Jao 😚🙈♥️" , "Dur Dur karib na a  tujhe Aur Koi Kam Nahi Kiya Har Waqat Mjhy Tang Karte Rahte Ho 😂" , "ary ary bolo meri jaan kia haal hai ;) ;* " , "Tum aunty ho yehh uncle 🤔 I think tum Jin ho yehh Chudail🤣✅" , "ary tum ider 🤔 khair hai ider kia ker rhy ho 😂" , "ary babu babu kal hawali py kon bola rha tha 😂" , "Me Aap ki mummy ji ko btaou ga Aap Facebook use karty ho 😂" , "ary tum Wohi ho nah jis ko ma nahi janta 🤣✅" , "haveli per  kal mil  Zara bataunga 🌚😂Ha but उल्टी-सीधी harkat karne ke liye nahi" , "itne pyar se Na bulao pyar Ho jaega 😶💗 wtf Maine apni sacchai Bata Di yah Maine kyon Kiya 😭🔪....Fuuu..🚬" , "aap aise mat bulo hame sharam aati hai 🙈♥️" , "kyun Bulaya hamen..😾🔪 " , "kyun Bulaya hamen..😾🔪" ];
+  var rand = tl[Math.floor(Math.random() * tl.length)]
+
+
+
+
+
+
+  //good night
+  if ((event.body.indexOf("Good night") >= 0 ) ||(event.body.indexOf("good night") >= 0 ) || (event.body.toLowerCase() == "gn") || (event.body.toLowerCase() == "good night all") || (event.body.toLowerCase() == "good night everyone") || (event.body.toLowerCase() == "gn all")) {
+     return api.sendMessage(`${name} 🌇 Good night Dost Mahadev tumko hamesa khush rakhe🕉🕉🥰`, threadID, messageID);
+   };
+
+   
+  
+  
+  
+  if ((event.body.toLowerCase() == "good morning") || (event.body.toLowerCase() == "gm") || (event.body.toLowerCase() == "gm all") || (event.body.indexOf("good morning") >= 0 ) ||(event.body.indexOf("Good morning") >= 0 ) || (event.body.toLowerCase() == "good morning everyone") || (event.body.toLowerCase() == "gm everyone") || (event.body.toLowerCase() == "good morning guys") || (event.body.toLowerCase() == "gm guys") || (event.body.toLowerCase() == "gm all of you")|| (event.body.toLowerCase() == "good morning ❣️")|| (event.body.toLowerCase() == "good morning guysss")|| (event.body.toLowerCase() == "good morning all of you")|| (event.body.toLowerCase() == "g m")|| (event.body.toLowerCase() == "gud morning")) {
+     return api.sendMessage(`${name} 🌄🌄 Good morning dost lord Ram aapko hmesa Khush rkhe🕉🕉🥰`, threadID, messageID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "hi") || (event.body.toLowerCase() == "hello")) {
+     return api.sendMessage("Hello How are you 💖🤍✨", threadID, messageID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "thik hu") || (event.body.toLowerCase() == "achha hu")||(event.body.toLowerCase() == "mst")) {
+     return api.sendMessage(" 🎀  Are bahut badhiya  🎀", threadID, messageID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "🙄") || (event.body.toLowerCase() == "🙄🙄")) {
+     return api.sendMessage("𝑼𝑷𝑹 𝑲𝒀𝑨 𝑴𝑰𝑳 𝑮𝒀𝑨 𝑩𝑨𝑳𝑨𝑲😈", threadID, messageID);
+   };
+
+
+  
+  if ((event.body.indexOf("😘") >= 0) || (event.body.indexOf("😘😘") >= 0)) {
+     return api.sendMessage("𝑳𝑮𝑬 𝑹𝑯𝑶 𝑪𝑯𝑼𝑴𝑴𝑨 𝑪𝑯𝑨𝑻𝑰 𝑴 𝑯𝑴𝑬 𝑲𝒀𝑨 𝑯𝑴.𝑻𝑶.𝑺𝑰𝑵𝑮𝑳𝑬 𝑯", threadID, messageID);
+   };
+  
+   if ((event.body.toLowerCase() == "😂") || (event.body.toLowerCase() == "😂😂")|| (event.body.toLowerCase() == "😂😂😂")|| (event.body.toLowerCase() == "😂😂😂😂")|| (event.body.toLowerCase() == "😂😂😂😂😂")|| (event.body.toLowerCase() == "😂😂😂😂😂😂")|| (event.body.toLowerCase() == "😂😂😂😂😂😂😂")) {
+     return api.sendMessage("🐎 ⋆ 🐼  🎀  𝑨𝑹𝑬 𝑴𝑨𝑲𝑯𝑯𝑰 𝑮𝑯𝑼𝑺 𝑱𝑨𝑬𝑮𝑰 𝑹𝑬  😜😜😜😜 ", threadID, messageID);
+   };
+  
+   if ((event.body.indexOf("😎") >= 0) || (event.body.toLowerCase() == "😎😎")) {
+     return api.sendMessage("°  🎀  𝑭𝑼𝑳𝑳 𝑪𝑯𝑨𝑺𝑴𝑨𝑩𝑨𝒁𝑰 😐😉  🎀  °", threadID, messageID);
+   };
+
+
+   if ((event.body.indexOf("😴") >= 0) || (event.body.toLowerCase() == "😴")) {
+     return api.sendMessage("𝑺𝑶 𝑱𝑨𝑶 𝑪𝑼𝑻𝑰𝑬 𝑵𝑰𝑵𝑫 𝑨𝑨 𝑹𝑯𝑰 𝑯 𝑻𝑶 😒", threadID, messageID);
+   };
+
+   if ((event.body.indexOf("😹") >= 0) || (event.body.toLowerCase() == "😹😹")) {
+     return api.sendMessage("𝑨𝑹𝑾 𝑮𝑹𝑶𝑼𝑷𝑾𝑨𝑳𝑶 𝒀𝑬 𝑩𝑰𝑳𝑳𝑰 𝑲𝑯𝑨 𝑺𝑬 𝑳𝑨𝒀𝑬 😜😜😂", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "🤨") || (event.body.toLowerCase() == "😐")|| (event.body.toLowerCase() == "😑")|| (event.body.toLowerCase() == "😶")|| (event.body.toLowerCase() == "😏")|| (event.body.toLowerCase() == "😣")|| (event.body.toLowerCase() == "😥")) {
+     return api.sendMessage("𝑲𝒀𝑨 𝑯𝑼𝑨 𝑪𝑼𝑻𝑰𝑬 🙄", threadID, messageID);
+   };
+
+
+   if ((event.body.toLowerCase() == "😭") || (event.body.toLowerCase() == "😭😭")) {
+     return api.sendMessage("Rotdu dost, ro kyu rhe ho 😐", threadID, messageID);
+   };
+
+
+   if ((event.body.toLowerCase() == "🙂") || (event.body.toLowerCase() == "🙂🙂")) {
+     return api.sendMessage("जा चुकी है वो 😞😞", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "😍") || (event.body.toLowerCase() == "🥰")) {
+     return api.sendMessage("𝑳𝑮𝑻𝑨 𝑯 𝑶𝒀𝑶 𝑩𝑶𝑶𝑲.𝑲𝑹 𝑳𝑰𝒀𝑨 𝑨𝑨𝑱 😏", threadID, messageID);
+   };
+
+   if ((event.body.indexOf("😤") >= 0) || (event.body.indexOf("😠") >= 0)|| (event.body.toLowerCase() == "😠😠")|| (event.body.toLowerCase() == "😤😤")|| (event.body.indexOf("😡") >=  0)|| (event.body.toLowerCase() == "😡😡")|| (event.body.toLowerCase() == "😡😡😡")) {
+     return api.sendMessage("𝑮𝑼𝑺𝑺𝑨 𝑵𝑯𝑰 𝑲𝑹𝑶 𝑫𝑶𝑺𝑻 𝑮𝑼𝑺𝑺𝑨 𝑺𝑬𝑯𝑨𝑻 𝑶𝑹 𝑹𝑰𝑺𝑻𝑬 𝑫𝑶𝑵𝑶 𝑲 𝑳𝑰𝒀𝑬 𝑯𝑨𝑵𝑰𝑲𝑨𝑹𝑨𝑲 𝑯 💕💖✔", threadID, messageID);
+   };
+  
+  if ((event.body.toLowerCase() == "😒") || (event.body.toLowerCase() == "😒😒")) {
+     return api.sendMessage("𝑨𝑨𝒀𝑬 𝑯𝑨𝒀𝑬𝑬 𝑪𝑯𝑼𝑷𝑲𝑬 𝑪𝑯𝑼𝑷𝑲𝑬 𝑺𝑰𝑫𝑬 𝑾𝑨𝑳𝑬 𝑩𝑵𝑫𝑬 𝑷.𝑳𝑰𝑵𝑬 𝑴𝑨𝑹𝑰 𝑱𝑨𝑨 𝑹𝑯𝑰 𝑯", threadID, messageID);
+   };
+
+
+
+
+
+    
+
+    if ((event.body.toLowerCase() == "koi h kya") || (event.body.toLowerCase() == "koi h kiya") || (event.body.toLowerCase() == "koi hai kiya") || (event.body.toLowerCase() == "Koi hai kya")) {
+     return api.sendMessage("मैं हूं ना जानेमन 🙂🤟", threadID,messageID);
+   };
+
+    if ((event.body.toLowerCase() == "call aao") || (event.body.toLowerCase() == "call") || (event.body.toLowerCase() == "call aaja") || (event.body.toLowerCase() == "Call aao sab")) {
+     return api.sendMessage("मैं कैसे कॉल आऊं मैं तो बोट हूं 😒👈", threadID,messageID);
+   };
+
+   if ((event.body.toLowerCase() == "kiya kar rahe ho") || (event.body.toLowerCase() == "kkrh")) {
+    return api.sendMessage("लूंगी डांस कर रहा हूं करना है मेरे साथ 🤨👈", threadID,messageID);
+   };
+
+    if ((event.body.toLowerCase() == "😴") || (event.body.toLowerCase() == "😴😴") || (event.body.toLowerCase() == "😴😴😴") || (event.body.toLowerCase() == "😴😴😴😴")) {
+     return api.sendMessage("कोई इसको लात मार के जगाओ ग्रुप में ही सो गया 🤨👈", threadID,messageID);
+   };
+
+  if ((event.body.toLowerCase() == "🥵") || (event.body.toLowerCase() == "🥵🥵") || (event.body.toLowerCase() == "🥵🥵🥵") || (event.body.toLowerCase() == "🥵🥵🥵🥵")) {
+     return api.sendMessage("उफ्फ कितनी गर्मी है 🥵🥵👈", threadID,messageID);
+   };
+
+   if ((event.body.toLowerCase() == "acha") || (event.body.toLowerCase() == "acha ji") || (event.body.toLowerCase() == "acha g") || (event.body.toLowerCase() == "oo acha ji")) {
+     return api.sendMessage("हांजी बाबू 😒👈", threadID,messageID);
+   };
+
+  if ((event.body.toLowerCase() == "kamina") || (event.body.toLowerCase() == "kamina bot") || (event.body.toLowerCase() == "tamina") || (event.body.toLowerCase() == "kamine")) {
+     return api.sendMessage("तू डबल कमीना 😒👈", threadID,messageID);
+   };
+
+  if ((event.body.toLowerCase() == "shat up") || (event.body.toLowerCase() == "shut up") || (event.body.toLowerCase() == "shut") || (event.body.toLowerCase() == "stup")) {
+     return api.sendMessage("You Stup Up 😕👈", threadID,messageID);
+   };
+
+  if ((event.body.toLowerCase() == "🥰") || (event.body.toLowerCase() == "🥰🥰") || (event.body.toLowerCase() == "🥰🥰🥰") || (event.body.toLowerCase() == "🥰🥰🥰🥰")) {
+     return api.sendMessage("🥳🥳🥳🥳🥳", threadID,messageID);
+   };
+
+  if ((event.body.toLowerCase() == "ludo") || (event.body.toLowerCase() == "ludo link do") || (event.body.toLowerCase() == "ludo lwo") || (event.body.toLowerCase() == "link do")) {
+     return api.sendMessage("मुझे लूडो खेलना नही आता 🥺👈", threadID,messageID);
+   };
+
+  if ((event.body.toLowerCase() == "kya hua") || (event.body.toLowerCase() == "kiya hua") || (event.body.toLowerCase() == "tya hua") || (event.body.toLowerCase() == "kiya hua")) {
+     return api.sendMessage("कुछ नही बाबू 😒👈", threadID,messageID);
+   };
+
+   if ((event.body.toLowerCase() == "billi") || (event.body.toLowerCase() == "cat")|| (event.body.toLowerCase() == "bot billi")|| (event.body.toLowerCase() == "tu h billi")|| (event.body.toLowerCase() == "bot cat")|| (event.body.toLowerCase() == "bilota")|| (event.body.toLowerCase() == "cat")|| (event.body.toLowerCase() == "billi bot")) {
+     return api.sendMessage("️𝑲𝒀𝑼 𝑩𝑰𝑳𝑳𝑰 𝑩𝑰𝑳𝑳𝑰 𝑲𝑹𝑻𝑰 𝑯 𝑻𝑼 𝑩𝑰𝑳𝑳𝑰 𝑷.𝑲𝒀𝑼 𝑴𝑹𝑻𝑰 𝑯 😁", threadID, messageID);
+   };  
+  
+   if ((event.body.indexOf("#") == 0) || (event.body.toLowerCase() == "#")) {
+     return api.sendMessage("️  #  𝑲𝑰 𝑱𝑮𝑯 𝑨𝑩 👉 . 𝑼𝑺𝑬 𝑲𝑹𝑬 𝑻𝑩 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑹𝑼𝑵𝑵𝑰𝑵𝑮 𝑺𝑻𝑨𝑻𝑬 𝑴 𝑨𝑨𝒀𝑬𝑮𝑰 \n 𝒇𝒓𝒐𝒎 𝒂𝒅𝒎𝒊𝒏 : Mr. aaryan", threadID, messageID);
+   };
+
+   if ((event.body.indexOf("bot kmina") >= 0) || (event.body.toLowerCase() == "kmine")|| (event.body.toLowerCase() == "kmina bot")|| (event.body.toLowerCase() == "kmine bot")|| (event.body.toLowerCase() == "kmina h tu")|| (event.body.toLowerCase() == "kmini")|| (event.body.toLowerCase() == "kmina ldka")|| (event.body.toLowerCase() == "bot kmine bhg")|| (event.body.toLowerCase() == "bot kmine hurr")) {
+     return api.sendMessage("️𝑨𝑮𝑹 𝑯𝑴 𝑲𝑨𝑴𝑰𝑵𝑬 𝑯 𝑭𝑰𝑹 𝑻𝑼𝑴 𝑻𝑶 𝑫𝑶𝑼𝑩𝑳𝑬 𝑲𝑨𝑴𝑰𝑵𝑰 𝑯𝑼𝑰 😁😁", threadID, messageID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "nikl sale") || (event.body.toLowerCase() == "nikl")|| (event.body.toLowerCase() == "nikal")|| (event.body.toLowerCase() == "nikal sale")|| (event.body.toLowerCase() == "nikal bsdk")|| (event.body.toLowerCase() == "nikl bsdk")|| (event.body.toLowerCase() == "nikal chutiye")|| (event.body.toLowerCase() == "nikl chutiye")|| (event.body.toLowerCase() == "nikl bc")|| (event.body.toLowerCase() == "nikl sale 😂")|| (event.body.toLowerCase() == "nikl lawde")) {
+     return api.sendMessage("️𝑵𝑯𝑰 𝑵𝑰𝑲𝑨𝑳 𝑹𝑯𝑨 𝑴𝑬𝑹𝑰 𝑴𝑹𝑱𝑰 😒", threadID, messageID);
+   };
+  
+  
+   if ((event.body.indexOf("bot chutiya") >= 0) || (event.body.indexOf("bot gndu") >=0)|| (event.body.indexOf("bot gandu") >=0)|| (event.body.indexOf("bot kuta") >= 0)|| (event.body.indexOf("bot kutta") >=0)|| (event.body.indexOf("bot bklol") >=0)|| (event.body.indexOf("bot bakchod") >= 0)|| (event.body.indexOf("sasta bot") >= 0)|| (event.body.indexOf("bot lodu") >= 0)|| (event.body.indexOf("bot bsdk") >= 0)|| (event.body.indexOf("bsdk bot") >= 0)|| (event.body.indexOf("bot bc") >= 0)) {
+     return api.sendMessage("️𝑯𝑨𝑨𝑨𝑨 ,, 𝑶𝑹 𝑻𝑼𝑴 𝑯𝑼𝑺𝑵𝑷𝑨𝑹𝑰 𝑯𝑶 😆😆😆😆 😁", threadID, messageID);
+   };
+
+   
+   if ((event.body.toLowerCase() == "htttt") || (event.body.toLowerCase() == "httt")|| (event.body.toLowerCase() == "htt")|| (event.body.toLowerCase() == "ht")|| (event.body.toLowerCase() == "httttt")|| (event.body.toLowerCase() == "htttttt")|| (event.body.toLowerCase() == "hhtt")|| (event.body.toLowerCase() == "httttttt")|| (event.body.toLowerCase() == "hhhttt")) {
+     return api.sendMessage("️𝑻𝑼𝑴 𝑯𝑨𝑻𝑶 𝑯𝑴 𝑲𝒀𝑼 𝑯𝑨𝑻𝑬 😁😁", threadID, messageID);
+   };
+
+  if ((event.body.toLowerCase() == "bhk") || (event.body.toLowerCase() == "bhkk")|| (event.body.toLowerCase() == "bhkkk")|| (event.body.toLowerCase() == "bhkkkk")|| (event.body.toLowerCase() == "bhkkkkk")|| (event.body.toLowerCase() == "bhkkkkkk")|| (event.body.toLowerCase() == "bhkkk bot")|| (event.body.toLowerCase() == "bhkkkk bot")|| (event.body.toLowerCase() == "bhkkkkk bot")) {
+     return api.sendMessage("️𝑨𝑹𝑾 𝑯𝑴𝑨𝑹𝑬 𝑱𝑴𝑨𝑵𝑬 𝑴 𝑩𝑯𝑲𝑲 𝑩𝑯𝑲𝑲 𝑻𝑶 𝑲𝑼𝑻𝑻𝑬 𝑲𝑹𝑻𝑬 𝑹𝑬𝑯𝑻𝑬 𝑻𝑯𝑬 𝑮𝑨𝑳𝑰𝒀𝑶 𝑴😁", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "abe jaa na") || (event.body.toLowerCase() == "abe ja na")|| (event.body.toLowerCase() == "abe ja")|| (event.body.toLowerCase() == "abe jaa")|| (event.body.toLowerCase() == "abe nikl")|| (event.body.toLowerCase() == "abe bhag")|| (event.body.toLowerCase() == "bhag ja")|| (event.body.toLowerCase() == "bhgja")|| (event.body.toLowerCase() == "bhggg")) {
+     return api.sendMessage("️𝑵𝑯𝑰 𝑩𝑯𝑮 𝑹𝑯𝑨 𝑴𝑬𝑹𝑰 𝑴𝑹𝑱𝑰 😹", threadID, messageID);
+   };
+
+
+   if ((event.body.toLowerCase() == "sorry") || (event.body.toLowerCase() == "sorry.")|| (event.body.toLowerCase() == "sorry..")|| (event.body.toLowerCase() == "sorry...")|| (event.body.toLowerCase() == "sry")|| (event.body.toLowerCase() == "sory")|| (event.body.toLowerCase() == "sry all")|| (event.body.toLowerCase() == "sorry everyone")|| (event.body.toLowerCase() == "sorry all")) {
+    return api.sendMessage("️𝑱𝑨𝑶 𝑱𝑨𝑶 𝑴𝑨𝑨𝑭 𝑲𝑰𝒀𝑨 𝑴𝑬𝑵𝑬 𝑻𝑼𝑴𝑲𝑶 𝑼𝑵𝑲𝑰.𝑻𝑨𝑹𝑨𝑭 𝑺𝑬 ✔", threadID, messageID);
+   };
+
+
+  if ( (event.body.toLowerCase() == "Thanks") ||(event.body.toLowerCase() == "ty") || (event.body.toLowerCase() == "t y")|| (event.body.indexOf("thanks") >= 0)|| (event.body.indexOf("thank you") >= 0 )|| (event.body.indexOf("tysm") >= 0 )|| (event.body.indexOf("thankyou") >= 0)|| (event.body.toLowerCase() == "tq")|| (event.body.toLowerCase() == "tq everyone")|| (event.body.toLowerCase() == "tq all")|| (event.body.indexOf("thank u") >=0)) {
+     return api.sendMessage("️𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑫𝑶𝑺𝑻 🕉 \n  𝑳𝑶𝑹𝑫 𝑲𝑹𝑰𝑺𝑯𝑵𝑨 𝑨𝑷𝑲𝑰 𝑯𝑴𝑬𝑺𝑨 𝑯𝑬𝑳𝑷 𝑲𝑹𝑬  🕉  💖", threadID, messageID);
+   };
+            
+    
+   if ((event.body.toLowerCase() == "dm bot") || (event.body.toLowerCase() == "dm bot")) {
+     return api.sendMessage("️Swear something to your dad :), you're a kid but you like to be alive :)", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "nobody loves me") || (event.body.toLowerCase() == "nobody loves me")) {
+     return api.sendMessage("️Come on, the bot loves you <3 <3", threadID, messageID);
+   };
+
+  if ((event.body.toLowerCase() == "😘😘😘") || (event.body.toLowerCase() == "😽")) {
+     return api.sendMessage("Pehle Brush Karke AA. Tere Muh Se Badbu AA Rhi H", threadID, messageID);
+   };
+   
+   if ((event.body.toLowerCase() == "bot i m going") || (event.body.toLowerCase() == "bot im di")) {
+     return api.sendMessage("Im cc :))) m stop barking for me, but tell me im :>>", threadID, messageID);
+   };
+
+  if ((event.body.toLowerCase() == "basanti") || (event.body.toLowerCase() == "basanti")) {
+     return api.sendMessage("Basanti Kutto se bat nhi karti", threadID); 
+  };
+
+if ((event.body.toLowerCase() == "sim") || (event.body.toLowerCase() == "simsim")) {
+     return api.sendMessage("Prefix Kya m lgaunga Pehle Prefix Laga Fir Likh Sim", threadID, messageID);
+   };
+
+    if ((event.body.toLowerCase() == "bc") || (event.body.toLowerCase() == "Bc")) {
+     return api.sendMessage("Ye Bc Kya HoTa Hai 🤔 ", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "lol") || (event.body.toLowerCase() == "lol player")) {
+     return api.sendMessage("Khud ko KYa LeGend SmJhTe Ho aap 😂", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "anyone") || (event.body.toLowerCase() == "any")|| (event.body.toLowerCase() == "koi h")|| (event.body.toLowerCase() == "kha gye sab")|| (event.body.toLowerCase() == "kha gye sb")|| (event.body.toLowerCase() == "koi h kya")|| (event.body.toLowerCase() == "is anyone here")|| (event.body.toLowerCase() == "kha gye nikamo")|| (event.body.toLowerCase() == "koi h kya")|| (event.body.toLowerCase() == "sb lge pde h")|| (event.body.toLowerCase() == "sb lge pde h babu sona m")) {
+     return api.sendMessage("M Hu Na dear yha ❤️", threadID, messageID);
+   };
+
+
+  if ((event.body.indexOf("Vansh") >= 0)||(event.body.indexOf("Aaryan")  >= 0)||(event.body.toLowerCase() == "aaryan")|| (event.body.toLowerCase() == "aryan") || (event.body.toLowerCase() == "aryan") ||(event.body.toLowerCase() == "Aaryan ji") || (event.body.toLowerCase() == "Mr aaryan") || (event.body.toLowerCase() == "Mr aaryan ji")) {
+     return api.sendMessage( "𝑶𝒏𝒍𝒊𝒏𝒆 𝒉𝒐𝒈𝒂 𝒕𝒐 𝒓𝒆𝒑𝒍𝒚 𝒌𝒓𝒅𝒆𝒈𝒂 𝒏𝒉𝒊 𝒌𝒊𝒚𝒂 𝒕𝒐 𝑯𝒐 𝒔𝒌𝒕𝒂 𝒉 𝒌𝒊 𝒐𝒇𝒇𝒍𝒊𝒏𝒆 𝒉𝒐 𝒆𝒔𝒆 𝒎 𝒂𝒂𝒑 𝒖𝒏𝒌𝒊 𝒊𝒅 𝒑 𝒎𝒔𝒈 𝒌𝒓 𝒔𝒌𝒕𝒆 𝒉 \n 𝑰𝑫 𝑳𝑰𝑵𝑲 =>\n  https://www.facebook.com/Mr.Aaryan.babu",threadID, messageID);
+
+       
+   };
+
+ if ((event.body.indexOf("ghanta") >= 0 ) ||(event.body.indexOf("ghnta") >= 0 ) || (event.body.toLowerCase() == "ghnta") || (event.body.toLowerCase() == "ghnta bc") || (event.body.toLowerCase() == "gnta") || (event.body.toLowerCase() == "gnta bc")) {
+     return api.sendMessage( "Kya hota h ye ghnta vnta hme bhi btao 😁😁😂",threadID, messageID);
+
+       
+   };
+
+
+
+  
+ if ((event.body.indexOf("admin") >= 0 ) || (event.body.toLowerCase() == "create you")) {
+     return api.sendMessage("‎[𝐎𝐖𝐍𝐄𝐑:☞MR. AARYAN☜ \n 𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 Aaryan \n 𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 :- \n https://www.facebook.com/Mr.Aaryan.babu", threadID, messageID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "is the bot sad") || (event.body.toLowerCase() == "is the bot sad")) {
+     return api.sendMessage("Why can't I be sad because of everyone <3 love you <3", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "does the bot love you") || (event.body.toLowerCase() == "does the bot love you")) {
+     return api.sendMessage("Yes I love you and everyone so much", threadID, messageID);
+   };
+
+  if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon ha")|| (event.body.toLowerCase() == "admin kon h bot ka")) {
+     return api.sendMessage("He is MR.Aaryan", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "has the bot eaten yet") || (event.body.toLowerCase() == "bot an comrade")) {
+     return api.sendMessage("I'm full when I see you eat <3", threadID, messageID);
+   };
+
+ if ((event.body.indexOf("chup") >= 0 ) || (event.body.indexOf("sant hoja") >= 0 ) || (event.body.indexOf("chup ho ja") >= 0 ) || (event.body.indexOf("chup kar") >= 0 )) {
+     return api.sendMessage("𝑵𝑯𝑰 𝑹𝑨𝑯𝑼𝑵𝑮𝑨. 😼 𝑴𝑼𝑱𝑯𝑬 𝑩𝑶𝑳𝑵𝑨 𝑯. 𝑻𝑼𝑴𝑯𝑬 𝑲𝑶𝑰 𝑯𝑨𝑸 𝑵𝑯𝑰. 𝑴𝑼𝑱𝑯𝑬 𝑪𝑯𝑼𝑷 𝑲𝑹𝑵𝑬 𝑲𝑨 𝑴𝑬𝑹𝑨 𝑱𝑼𝑩𝑨𝑵 𝑴 𝑩𝑶𝑳𝑼𝑵𝑮𝑨", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "does the bot have a brand") || (event.body.toLowerCase() == "does the bot fall")) {
+     return api.sendMessage("Yes <3", threadID, messageID);
+   };
+  
+   if ((event.body.indexOf("Bye") >= 0) ||(event.body.indexOf("bye") >= 0) || (event.body.toLowerCase() == "by")) {
+     return api.sendMessage("𝙃𝙖 𝙟𝙖𝙤 𝙟𝙖𝙤 𝙠𝙤𝙞 𝙣𝙝𝙞 𝙧𝙤𝙠𝙚𝙜𝙖, 𝙟𝙖𝙣𝙚 𝙬𝙖𝙡𝙚 𝙠𝙤 𝙠𝙤𝙣 𝙧𝙤𝙠 𝙨𝙠𝙩𝙖 𝙝 😭😷 ❤️ ", threadID, messageID);
+   };
+   mess = "{name}"
+
+if (event.body.indexOf("Gu khale") >= 0 || (event.body.indexOf("gu khale") >= 0)||(event.body.indexOf("Gu khalo") >= 0)||(event.body.indexOf("gu khalo") >= 0)||(event.body.indexOf("gu kha le") >= 0)||(event.body.indexOf("tatti") >= 0)||(event.body.indexOf("Tatti") >= 0)||(event.body.indexOf("Gu kha le") >= 0)) {
+    var msg = {
+      body: `${name}, 𝒕𝒖𝒎 𝒉𝒊 𝒌𝒉𝒂𝒍𝒐 𝒗𝒐 𝒂𝒑𝒏𝒂 𝒈𝒖/𝒕@@𝒕𝒕𝒊 😂😂😂`
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+
+
+if (event.body.indexOf("🙏") >= 0 || (event.body.indexOf("jai") >= 0)||(event.body.indexOf("mata") >= 0)||(event.body.indexOf("Jai mata") >= 0)) {
+    var msg = {
+      body: `${name}, Jai Mata Di 🙏🚩🚩🚩💝`
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+                                                                                                                                                                 
+
+  
+
+
+if (event.body.indexOf("Call aao") >= 0 || (event.body.indexOf("call aao") >= 0)||(event.body.indexOf("join call") >= 0)||(event.body.indexOf("Join call") >= 0)||(event.body.indexOf("call aa") >= 0)||(event.body.indexOf("Call aa") >= 0)||(event.body.indexOf("call aaiye") >= 0)||(event.body.indexOf("Call aaiye") >= 0)) {
+    var msg = {
+      body: `मैं कॉल नही आऊंगा वर्ना मेरी आवाज से प्यार हो जाएगा लडकियों को👀 `
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+
+
+
+if (event.body.indexOf("hme nhi milna bot") >= 0 || (event.body.indexOf("nhi milna") >= 0)||(event.body.indexOf("Nhi milna") >= 0)||(event.body.indexOf("Hme nhi milna bot") >= 0)||(event.body.indexOf("hme nhi milna") >= 0)||(event.body.indexOf("Hme nhi milna") >= 0)||(event.body.indexOf("Na milna") >= 0)||(event.body.indexOf("na milna") >= 0)) {
+    var msg = {
+      body: `𝑴𝑻 𝑴𝑰𝑳𝑶 𝑭𝑰𝑹 😹 𝑴𝑬𝑹𝑨 𝑲𝑨𝑴.𝑻𝑯𝑨 𝑴𝑰𝑳𝑽𝑨𝑵𝑨  👀 `
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+  
+  if (event.body.indexOf("mc ") >= 0 ||event.body.indexOf("Mc ") >= 0 ||event.body.indexOf("Madharchod") >= 0 ||event.body.indexOf("bc ") >= 0 ||event.body.indexOf("Bc ") >= 0 ||event.body.indexOf("bsdk") >= 0 || (event.body.indexOf("Gandu") >= 0)||(event.body.indexOf("gandu") >= 0)||(event.body.indexOf("Bsdk") >= 0)||(event.body.indexOf("madharchod") >= 0)||(event.body.indexOf("chakke") >= 0)||(event.body.indexOf("Chakka") >= 0)||(event.body.indexOf("bhenchod") >= 0)) {
+    var msg = {
+      body: `${name} , 𝘼𝙘𝙝𝙝𝙖 𝙗𝙨𝙙𝙠 🤣🤣😂 \n 𝙊𝙧 𝙩𝙪𝙢 𝙝𝙪𝙨𝙣𝙥𝙖𝙧𝙞 𝙝𝙤, 𝙫𝙞𝙨𝙝𝙫𝙨𝙪𝙣𝙙𝙧𝙞 𝙝𝙤`
+    }
+    return api.sendMessage(msg, threadID, messageID);
+  };
+
+  if (event.body.indexOf("bot") >= 0 || (event.body.indexOf("Bot") >= 0)) {
+    var msg = {
+      body: `🌹🍂 ${name} 🌹🍂,  \n\n ${rand}       🌿🚩\n\n                          ©-𝐌𝐫.𝐀𝐚𝐫𝐲𝐚𝐧🥀🌎`
+    }
+    api.sendMessage(msg, threadID, messageID);
+    api.setMessageReaction("🙋", event.messageID, (err) => {}, true)
+  }
+
+}
+
+module.exports.run = function({ api, event, client, __GLOBAL }) { }
